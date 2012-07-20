@@ -23,21 +23,20 @@ kik::clPlansza::clPlansza( /*kik::clArea *area*/ )
 {
 	plansza = new kik::clArea[ ILOSC_POL ];
 	
-	kik::clArea area[] =
-{
-// pierwsza linia
-kik::clArea( 90, 90, W_AREA, H_AREA ), 
-kik::clArea( 90 + W_AREA + 5, 90, W_AREA, H_AREA ),
-kik::clArea( 90 + (W_AREA * 2) + 10, 90, W_AREA, H_AREA ),
-// druga linia
-kik::clArea( 90, 90 + H_AREA + 5, W_AREA, H_AREA ),
-kik::clArea( 90 + W_AREA + 5, 90 + H_AREA + 5, W_AREA, H_AREA ),
-kik::clArea( 90 + (W_AREA * 2) + 10, 90 + H_AREA + 5, W_AREA, H_AREA ),
-// trzecia linia
-kik::clArea( 90, 90 + (H_AREA * 2) + 10, W_AREA, H_AREA ),
-kik::clArea( 90 + W_AREA + 5, 90 + (H_AREA * 2) + 10, W_AREA, H_AREA ),
-kik::clArea( 90 + (W_AREA * 2) + 10, 90 + (H_AREA * 2) + 10, W_AREA, H_AREA )
-};
+	kik::clArea area[] = {
+		// pierwsza linia
+		kik::clArea( 90, 90, W_AREA, H_AREA ), 
+		kik::clArea( 90 + W_AREA + 5, 90, W_AREA, H_AREA ),
+		kik::clArea( 90 + (W_AREA * 2) + 10, 90, W_AREA, H_AREA ),
+		// druga linia
+		kik::clArea( 90, 90 + H_AREA + 5, W_AREA, H_AREA ),
+		kik::clArea( 90 + W_AREA + 5, 90 + H_AREA + 5, W_AREA, H_AREA ),
+		kik::clArea( 90 + (W_AREA * 2) + 10, 90 + H_AREA + 5, W_AREA, H_AREA ),
+		// trzecia linia
+		kik::clArea( 90, 90 + (H_AREA * 2) + 10, W_AREA, H_AREA ),
+		kik::clArea( 90 + W_AREA + 5, 90 + (H_AREA * 2) + 10, W_AREA, H_AREA ),
+		kik::clArea( 90 + (W_AREA * 2) + 10, 90 + (H_AREA * 2) + 10, W_AREA, H_AREA )
+	};
 	
 	for( int i = 0; i < ILOSC_POL; i++ )
 		plansza[ i ] = area[ i ];
