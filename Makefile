@@ -1,11 +1,13 @@
 # Makefile dla allKiK v. 1.0
 CC = g++
 LDFLAGS = `allegro-config --libs`
-CXXFLAGS = `allegro-config --cppflags` -Wall -Werror -g -ggdb3
+CXXFLAGS = `allegro-config --cppflags` -Wall -g -ggdb3
 OBJS = main.o area.o plansza.o si.o
 PROGRAM = allkik
 
-all: $(OBJS)
+all: $(PROGRAM)
+
+$(PROGRAM): $(OBJS)
 		$(CC) -o $(PROGRAM) $(OBJS) $(LDFLAGS)
 
 main.o:  main.cxx game.h
